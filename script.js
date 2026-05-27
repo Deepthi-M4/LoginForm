@@ -6,7 +6,6 @@ form.addEventListener('submit', function(e){
     const password = document.getElementById('password').value.trim();
     const emailError = document.getElementById('emailError');
     const passwordError = document.getElementById('passwordError');
-
     const successMessage = document.getElementById('successMessage');
 
     emailError.textContent = "";
@@ -28,12 +27,10 @@ form.addEventListener('submit', function(e){
         valid = false;
     }
     else if(password.length < 6){
-
         passwordError.textContent = "Password must contain at least 6 characters";
         valid = false;
     }
     if(valid){
-
         successMessage.textContent = "Login Successful!";
     }
 });
